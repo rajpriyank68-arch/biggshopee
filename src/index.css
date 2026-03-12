@@ -1,0 +1,92 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Cinzel:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+@theme {
+  --color-primary: #8B1538;
+  --color-secondary: #D4AF37;
+  --color-accent: #FF6B35;
+  --color-background: #FFF8F0;
+  --color-foreground: #2D1810;
+  --color-card: #FFFFFF;
+  --color-muted: #F5E6D3;
+  --color-gold: #D4AF37;
+  --color-maroon: #8B1538;
+  --color-teal: #008080;
+  --color-coral: #FF6B6B;
+  --color-purple: #6B5B95;
+  --color-emerald: #2ECC71;
+  --color-dark: #1a0a0a;
+  --color-brown: #2d1810;
+  --color-brown-light: #3d2518;
+  --font-cormorant: 'Cormorant Garamond', serif;
+  --font-cinzel: 'Cinzel', serif;
+  --font-playfair: 'Playfair Display', serif;
+}
+
+body {
+  font-family: var(--font-cormorant);
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+.font-cormorant {
+  font-family: var(--font-cormorant);
+}
+
+.font-cinzel {
+  font-family: var(--font-cinzel);
+}
+
+.font-playfair {
+  font-family: var(--font-playfair);
+}
+
+.font-serif {
+  font-family: var(--font-cinzel);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-maroon), var(--color-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-teal {
+  background: linear-gradient(135deg, var(--color-teal), var(--color-emerald));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-coral {
+  background: linear-gradient(135deg, var(--color-coral), var(--color-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-purple {
+  background: linear-gradient(135deg, var(--color-purple), #9B59B6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(139, 21, 56, 0.15);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
